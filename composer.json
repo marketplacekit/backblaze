@@ -1,5 +1,5 @@
 {
-    "name": "marketplacekit/backblaze",
+    "name": "amelia/backblaze",
     "type": "library",
     "description": "Backblaze laravel storage adapter",
     "keywords": ["b2", "backblaze", "flysystem", "storage", "laravel"],

@@ -17,8 +17,8 @@ class BackblazeServiceProvider extends ServiceProvider
     {
         Storage::extend('b2', function ($app, $config) {
             $client = new Client($config['account'], $config['key']);
-
-            $adapter = new Adapter($client, $config['bucket'], $config['host']);
+			
+            $adapter = new Adapter($client, $config['bucket'], $config['host'], $config['prefix']);
 
             return new Filesystem($adapter);
         });
